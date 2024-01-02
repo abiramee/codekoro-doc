@@ -1,0 +1,1577 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../test-documentation/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Code Documentation - CodeKoro</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CodeKoro" class="md-header__button md-logo" aria-label="CodeKoro" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CodeKoro
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Code Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  User Documentation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Code Documentation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../test-documentation/" class="md-tabs__link">
+        
+  
+    
+  
+  Test Documentation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ajax-documentation/" class="md-tabs__link">
+        
+  
+    
+  
+  Ajax Documentation
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CodeKoro" class="md-nav__button md-logo" aria-label="CodeKoro" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    CodeKoro
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Code Documentation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Code Documentation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compiler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compiler
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frontend_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Frontend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adminpage" class="md-nav__link">
+    <span class="md-ellipsis">
+      AdminPage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AdminPage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addproblemtocontest" class="md-nav__link">
+    <span class="md-ellipsis">
+      AddProblemToContest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problempage" class="md-nav__link">
+    <span class="md-ellipsis">
+      ProblemPage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createcontetpae" class="md-nav__link">
+    <span class="md-ellipsis">
+      CreateContetPae
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contestpage" class="md-nav__link">
+    <span class="md-ellipsis">
+      ContestPage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stresstestpage" class="md-nav__link">
+    <span class="md-ellipsis">
+      StressTestPage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createproblem" class="md-nav__link">
+    <span class="md-ellipsis">
+      CreateProblem
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#homepage" class="md-nav__link">
+    <span class="md-ellipsis">
+      HomePage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HomePage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#onlycontestpage" class="md-nav__link">
+    <span class="md-ellipsis">
+      OnlyContestPage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OnlyContestPage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#upcommingcontest" class="md-nav__link">
+    <span class="md-ellipsis">
+      UpcommingContest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recentcontest" class="md-nav__link">
+    <span class="md-ellipsis">
+      RecentContest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recentcontest_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      RecentContest
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problemset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problemset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problemset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proset" class="md-nav__link">
+    <span class="md-ellipsis">
+      ProSet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ranking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ranking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ranking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rank" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rank
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contest-arena" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contest Arena
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contest Arena">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problemlist" class="md-nav__link">
+    <span class="md-ellipsis">
+      ProblemList
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Submit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mysubmission" class="md-nav__link">
+    <span class="md-ellipsis">
+      MySubmission
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sign-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sign in
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sign-in_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sign in
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backend_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backend
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Backend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project-sturcure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Sturcure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contest-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contest Api
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contest Api">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-contest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Contest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upcoming-contest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upcoming Contest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#all-contest" class="md-nav__link">
+    <span class="md-ellipsis">
+      All Contest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#previous-contest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Previous Contest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contest-registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contest Registration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-left" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time Left
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Analytics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problem API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#craete-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Craete Problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get Problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-specific-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get Specific Problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-problem-to-contest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Problem To contest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-testcases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get Testcases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-problem-by-contest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get Problem by Contest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submission" class="md-nav__link">
+    <span class="md-ellipsis">
+      Submission
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#my-submission" class="md-nav__link">
+    <span class="md-ellipsis">
+      My Submission
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submission_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Submission
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      USER API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="USER API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sign-in_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sign In
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#me" class="md-nav__link">
+    <span class="md-ellipsis">
+      ME
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-rank" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get Rank
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../test-documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ajax-documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ajax Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Code Documentation</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>Welcome to the CodeKoro Code Documentation, your comprehensive guide to the architecture and functionalities of CodeKoro. CodeKoro comprises three essential modules: Frontend, Backend, and Compiler. Each module plays a crucial role in delivering a seamless and powerful coding experience.</p>
+<h3 id="frontend">Frontend</h3>
+<p><img alt="asset" src="https://qtecsolution.com/media/technologies/React_JS_1oFeSaJ.png" /></p>
+<ul>
+<li>Technology: Built with React</li>
+<li>Description: The Frontend Module serves as the user interface, providing an interactive and intuitive platform for participants. Leveraging React, it ensures a responsive and dynamic experience, enabling users to navigate through contests, problems, and their personalized dashboards effortlessly.</li>
+</ul>
+<h3 id="backend">Backend</h3>
+<p><img alt="asset" src="https://d1wrxu8gicsgam.cloudfront.net/wp-content/files/django-logo-big.jpg" /></p>
+<ul>
+<li>Technology: Built with Django</li>
+<li>Description: The Backend Module serves as the backbone of CodeKoro, handling data storage, user authentication, and business logic. Powered by Django, it ensures a robust and scalable architecture, facilitating seamless communication between the Frontend and the Database. User profiles, contest data, and submissions are managed with efficiency.</li>
+</ul>
+<h3 id="compiler">Compiler</h3>
+<p><img alt="asset" src="https://miro.medium.com/v2/resize:fit:1400/1*ycIMlwgwicqlO6PcFRA-Iw.png" /></p>
+<ul>
+<li>Technology: Built with Vanilla Python</li>
+<li>Description: The Compiler Module is the engine behind the execution of code submissions. Built with Vanilla Python, it ensures the secure and efficient compilation and execution of code, providing real-time feedback to users. This module is pivotal in assessing the correctness and efficiency of participants' solutions.</li>
+</ul>
+<h2 id="frontend_1">Frontend</h2>
+<h3 id="project-structure">Project Structure</h3>
+<pre><code>    ├───AdminPage/
+    │   ├───AddProblemToContest/
+    │   │   ├───AddProblemToContest.tsx
+    │   │   └───style.css
+    │   ├───ContestPage/
+    │   │   ├───ContestPage.tsx
+    │   │   └───style.css
+    │   ├───CreateContestPage/
+    │   │   ├───CreateContestPage.tsx
+    │   │   └───style.css
+    │   ├───CreateProblemPage/
+    │   │   ├───CreateProblemPage.tsx
+    │   │   └───style.css
+    │   ├───ProblemsPage/
+    │   │   ├───ProblemPage.tsx
+    │   │   └───style.css
+    │   ├───StressTestPage/
+    │   │   ├───StressTestPage.tsx
+    │   │   └───style.css
+    │   ├───AdminPage.tsx
+    │   ├───Create
+    │   └───style.css
+    ├───AuthenticationPage/
+    │   ├───AuthenticationPage.tsx
+    │   ├───SignIn.tsx
+    │   ├───SignUp.tsx
+    │   └───style.css
+    ├───ContestPage/
+    │   ├───MySubmissions/
+    │   │   ├───MySubmissions.tsx
+    │   │   └───style.css
+    │   ├───Problems.tsx/
+    │   │   ├───components/
+    │   │   │   └───InputOutput.tsx
+    │   │   ├───problems.tsx
+    │   │   └───style.css
+    │   ├───Standings/
+    │   │   ├───ProblemItem/
+    │   │   │   ├───ProblemItem.tsx
+    │   │   │   └───style.txt
+    │   │   ├───ProblemNumberItem/
+    │   │   │   ├───ProblemtNumberItem.tsx
+    │   │   │   └───style.tsx
+    │   │   ├───Standings.tsx
+    │   │   └───style.css
+    │   ├───SubmitPage.tsx/
+    │   │   ├───SubmitPage.tsx
+    │   │   └───style.css
+    │   ├───components/
+    │   │   ├───Contests.tsx
+    │   │   ├───NavbarButtonCon.tsx
+    │   │   ├───NavbarButtonText.tsx
+    │   │   ├───NavbarCon.tsx
+    │   │   ├───Stand.tsx
+    │   │   ├───Submission.tsx
+    │   │   └───style.css
+    │   ├───ContestPage.tsx
+    │   ├───ProblemsList.tsx
+    │   └───style.css
+    ├───HomePage/
+    │   ├───ProblemSet/
+    │   │   ├───ProSet.tsx
+    │   │   ├───ProblemSet.tsx
+    │   │   └───style.css
+    │   ├───Ranking/
+    │   │   ├───Rank.tsx
+    │   │   ├───Ranking.tsx
+    │   │   └───style.css
+    │   ├───components/
+    │   │   ├───Navbar.tsx
+    │   │   ├───NavbarButton.tsx
+    │   │   ├───OnlyContest.tsx
+    │   │   ├───RecCont.tsx
+    │   │   ├───RecentContest.tsx
+    │   │   ├───UpCont.tsx
+    │   │   ├───UpcommingContest.tsx
+    │   │   └───style.css
+    │   ├───HomePage.tsx
+    │   └───style.css
+    ├───Profilepage/
+    │   ├───components/
+    │   │   ├───NavbarProfile.tsx
+    │   │   ├───NavbarProfileButton.tsx
+    │   │   ├───SolvedDetails.tsx
+    │   │   └───style.css
+    │   ├───Profilepage.tsx
+    │   └───style.css
+    ├───assets/
+    │   ├───logo.png
+    │   └───react.svg
+    ├───App.css
+    ├───App.tsx
+    ├───Utils.tsx
+    ├───index.css
+    ├───main.tsx
+    └───vite-env.d.ts
+</code></pre>
+<h3 id="adminpage">AdminPage</h3>
+<h4 id="addproblemtocontest">AddProblemToContest</h4>
+<pre><code class="language-Type">    &lt;AddProblemToContest /&gt;
+</code></pre>
+<h4 id="problempage">ProblemPage</h4>
+<pre><code class="language-Type">    &lt;ProblemPage /&gt;
+</code></pre>
+<h4 id="createcontetpae">CreateContetPae</h4>
+<pre><code class="language-Type">    &lt;CreateContest /&gt;
+</code></pre>
+<h4 id="contestpage">ContestPage</h4>
+<pre><code class="language-Type">    &lt;CreateContest /&gt;
+</code></pre>
+<h4 id="stresstestpage">StressTestPage</h4>
+<pre><code class="language-Type">    &lt;StressTestPage /&gt;
+</code></pre>
+<h4 id="createproblem">CreateProblem</h4>
+<pre><code class="language-Type">    &lt;CreateProblem /&gt;
+</code></pre>
+<h3 id="homepage">HomePage</h3>
+<h4 id="onlycontestpage">OnlyContestPage</h4>
+<h5 id="upcommingcontest">UpcommingContest</h5>
+<pre><code class="language-Type">    &lt;UpcommingContest /&gt;
+</code></pre>
+<h5 id="recentcontest">RecentContest</h5>
+<pre><code class="language-Type">    &lt;RecentContest /&gt;
+</code></pre>
+<h5 id="recentcontest_1">RecentContest</h5>
+<pre><code class="language-Type">    &lt;RecentContest /&gt;
+</code></pre>
+<h4 id="problemset">Problemset</h4>
+<pre><code class="language-TypeScript">    &lt;ProblemSet /&gt;
+</code></pre>
+<h5 id="proset">ProSet</h5>
+<pre><code class="language-TypeScript">    &lt;ProSet problem_id={problem.problem_number} isActive={state.page == 1} name={problem.problem_name} solved={'🧑🏻 ' + problem.solve_count} /&gt; 
+</code></pre>
+<h4 id="ranking">Ranking</h4>
+<pre><code class="language-TypeScript">    &lt;&lt;Ranking/&gt; /&gt;
+</code></pre>
+<h5 id="rank">Rank</h5>
+<pre><code class="language-TypeScript">    &lt;Rank key={index} position={index + 1} name={r.fullname} contests={r.contest_attend} solved={r.problem_solve} /&gt;
+</code></pre>
+<h3 id="contest-arena">Contest Arena</h3>
+<h4 id="problemlist">ProblemList</h4>
+<pre><code class="language-TypeScript">    &lt;ProblemList id={id + &quot;&quot;} pageChanger={detail}/&gt;
+</code></pre>
+<h4 id="problems">Problems</h4>
+<pre><code class="language-TypeScript">    &lt;Problems id={state.problemId} /&gt;
+</code></pre>
+<h4 id="submit">Submit</h4>
+<pre><code class="language-TypeScript">     &lt;SubmitPage id={state.problemId + &quot;&quot;} contest={id + &quot;&quot;}/&gt;
+</code></pre>
+<h4 id="mysubmission">MySubmission</h4>
+<pre><code class="language-TypeScript">     &lt;MySubmissions contest={id + &quot;&quot;}/&gt;
+</code></pre>
+<h4 id="standing">Standing</h4>
+<pre><code class="language-TypeScript">     &lt;Standigs contest={id + &quot;&quot;}/&gt;
+</code></pre>
+<h3 id="authentication">Authentication</h3>
+<h4 id="sign-in">Sign in</h4>
+<pre><code class="language-TypeScript">     &lt;SignIn /&gt;
+</code></pre>
+<h4 id="sign-in_1">Sign in</h4>
+<pre><code class="language-TypeScript">     &lt;Sign Up/&gt;
+</code></pre>
+<h2 id="backend_1">Backend</h2>
+<h3 id="project-sturcure">Project Sturcure</h3>
+<pre><code>├───.idea/
+│   ├───inspectionProfiles/
+│   │   ├───Project_Default.xml
+│   │   └───profiles_settings.xml
+│   ├───.gitignore
+│   ├───.name
+│   ├───Backend.iml
+│   ├───misc.xml
+│   ├───modules.xml
+│   ├───vcs.xml
+│   └───workspace.xml
+├───Backend/
+│   ├───.idea/
+│   │   ├───inspectionProfiles/
+│   │   │   ├───Project_Default.xml
+│   │   │   └───profiles_settings.xml
+│   │   ├───.gitignore
+│   │   ├───Backend.iml
+│   │   ├───misc.xml
+│   │   ├───modules.xml
+│   │   ├───vcs.xml
+│   │   └───workspace.xml
+│   ├───__pycache__/
+│   │   ├───__init__.cpython-310.pyc
+│   │   ├───__init__.cpython-311.pyc
+│   │   ├───settings.cpython-310.pyc
+│   │   ├───settings.cpython-311.pyc
+│   │   ├───urls.cpython-310.pyc
+│   │   ├───urls.cpython-311.pyc
+│   │   ├───wsgi.cpython-310.pyc
+│   │   └───wsgi.cpython-311.pyc
+│   ├───__init__.py
+│   ├───asgi.py
+│   ├───celery.py
+│   ├───settings.py
+│   ├───urls.py
+│   └───wsgi.py
+├───CodeKoro/
+│   ├───__pycache__/
+│   │   ├───__init__.cpython-310.pyc
+│   │   ├───__init__.cpython-311.pyc
+│   │   ├───admin.cpython-310.pyc
+│   │   ├───admin.cpython-311.pyc
+│   │   ├───apps.cpython-310.pyc
+│   │   ├───apps.cpython-311.pyc
+│   │   ├───authenticate.cpython-310.pyc
+│   │   ├───models.cpython-310.pyc
+│   │   ├───models.cpython-311.pyc
+│   │   ├───serializers.cpython-310.pyc
+│   │   ├───urls.cpython-310.pyc
+│   │   ├───utils.cpython-310.pyc
+│   │   └───views.cpython-310.pyc
+│   ├───apis/
+│   │   ├───__pycache__/
+│   │   │   ├───contest.cpython-310.pyc
+│   │   │   ├───problem.cpython-310.pyc
+│   │   │   └───user.cpython-310.pyc
+│   │   ├───contest.py
+│   │   ├───problem.py
+│   │   └───user.py
+│   ├───migrations/
+│   │   ├───__pycache__/
+│   │   │   ├───0002_alter_country_table.cpython-310.pyc
+│   │   │   ├───0003_alter_country_table.cpython-310.pyc
+│   │   │   ├───0004_user.cpython-310.pyc
+│   │   │   ├───0005_alter_user_email_alter_user_username_and_more.cpython-310.pyc
+│   │   │   └───__init__.cpython-310.pyc
+│   │   ├───0001_initial.py
+│   │   ├───0002_languagemodel_submissionmodel_code_and_more.py
+│   │   ├───0003_verdict_submissionmodel_verdict_text_and_more.py
+│   │   ├───0004_rename_contest_id_submissionmodel_contest_and_more.py
+│   │   ├───0005_contestsubmissionmodel.py
+│   │   ├───0006_alter_contestsubmissionmodel_id.py
+│   │   ├───0007_alter_contestsubmissionmodel_unique_together.py
+│   │   ├───0008_contestsubmissionmodel_accepted_and_more.py
+│   │   ├───0009_penaltymodel.py
+│   │   ├───0010_rename_penaltymodel_penaltymodel_penalty.py
+│   │   ├───0011_submissionmodel_solve_count.py
+│   │   ├───0012_remove_submissionmodel_solve_count_and_more.py
+│   │   ├───0013_submissionmodel_time.py
+│   │   ├───0014_usermodel_batch_usermodel_department_usermodel_year.py
+│   │   ├───0015_usermodel_contest_attend_usermodel_problem_solve.py
+│   │   └───__init__.py
+│   ├───.DS_Store
+│   ├───__init__.py
+│   ├───admin.py
+│   ├───apps.py
+│   ├───authenticate.py
+│   ├───models.py
+│   ├───serializers.py
+│   ├───task.py
+│   ├───tests.py
+│   ├───urls.py
+│   ├───utils.py
+│   └───views.py
+├───cpp/
+│   └───.DS_Store
+├───.DS_Store
+├───country.txt
+├───get-pip.py
+├───manage.py
+└───requirements.txt
+</code></pre>
+<h3 id="contest-api">Contest Api</h3>
+<h4 id="create-contest">Create Contest</h4>
+<pre><code class="language-py">    def create_contest(request: Request):
+    print(request.data)
+    data = request.data
+    contest = ContestModel(contest_name=data.get('contest_name'), duration=data.get('duration'),
+                           start_at=data['start_at'],
+                           end_at=data['end_at'], schedule_at=data['schedule_at'])
+    contest.save()
+
+    response = Response(
+        create_success_response({&quot;hello&quot;}))
+    return response
+</code></pre>
+<h4 id="upcoming-contest">Upcoming Contest</h4>
+<pre><code class="language-py">    def upcoming_contest(request: Request):
+    print(request.data)
+    today = datetime.today()
+    print(datetime.now())
+    time = make_aware(datetime.now(), timezone=pytz.timezone(&quot;Asia/Dhaka&quot;))
+    contests = ContestModel.objects.filter(start_at__gte=time).all().values()
+
+    for contest in contests:
+        ans = False
+        contest['is_active'] = ans
+        contest['registered'] = ContestRegisterModel.objects.filter(contest_id=contest['id']).count()
+
+    response = Response(
+        create_success_response(contests))
+    return response
+</code></pre>
+<h4 id="all-contest">All Contest</h4>
+<pre><code class="language-py">    contests = ContestModel.objects.filter(start_at__gte=time).all().values()
+    response = Response(
+        create_success_response(contests))
+    return response
+</code></pre>
+<h4 id="previous-contest">Previous Contest</h4>
+<pre><code class="language-py">    today = datetime.today()
+    time = make_aware(datetime.now(), timezone=pytz.timezone(&quot;Asia/Dhaka&quot;))
+    contests = ContestModel.objects.filter(start_at__lte=time).all().values()
+
+    for contest in contests:
+        ans = False
+        # print(contest['id'])
+        contest['is_active'] = ans
+        if UserModel.objects.filter(email=request.user).exists() and ContestRegisterModel.objects.filter(contest_id=contest['id'],
+                                                                                                         user_id=UserModel.objects.get(
+                                                                                                                 email=request.user).id).exists():
+            ans = True
+            contest['is_active'] = ans
+        contest['registered'] = ContestRegisterModel.objects.filter(contest_id=contest['id']).count()
+
+    response = Response(
+        create_success_response(contests))
+    return response
+</code></pre>
+<h4 id="contest-registration">Contest Registration</h4>
+<pre><code class="language-py">    data = request.data
+    if UserModel.objects.filter(email=request.user).exists():
+        contest_registration = ContestRegisterModel(contest_id=ContestModel.objects.get(id=data['contest_id']),
+                                                    user_id=UserModel.objects.get(email=request.user))
+        contest_registration.save()
+        return Response(create_success_response({}));
+    return Response(create_error_response(200, {}))
+</code></pre>
+<h4 id="time-left">Time Left</h4>
+<pre><code class="language-py">    time_left = ContestModel.objects.filter(id=request.data['contest_id']).first().end_at - timezone.now()
+    time_left = time_left.total_seconds()
+    return Response(create_success_response({&quot;seconds&quot;: math.floor(time_left)}))
+</code></pre>
+<h4 id="process-analytics">Process Analytics</h4>
+<pre><code class="language-py">    def process_analytics(request: Request):
+        process_running = SubmissionModel.objects.filter(verdict_id=6).count()
+        process_queue = SubmissionModel.objects.filter(verdict_id=2).count()
+        process_finished = SubmissionModel.objects.count() - process_running - process_queue
+        return Response(create_success_response({&quot;running&quot;: process_running, &quot;queue&quot;: process_queue, &quot;finished&quot;: process_finished}))
+</code></pre>
+<h3 id="problem-api">Problem API</h3>
+<h4 id="craete-problems">Craete Problems</h4>
+<pre><code class="language-py">    data = request.data
+    problem = ProblemModel(problem_name=data['problem_name'], problem_statement=data['problem_statement'], input=data['input'],
+                           output=data['output'], problem_number=data['problem_number'], time_limit=data['time_limit'], memory_limit=data['memory_limit'])
+    problem.save()
+
+    for testcase in data['testcases']:
+        TestcaseModel(problem_id=problem, input=testcase['input'], output=testcase['output']).save()
+
+    response = Response(
+        create_success_response({&quot;hello&quot;}))
+    return response
+</code></pre>
+<h4 id="get-problems">Get Problems</h4>
+<pre><code class="language-py">    response = Response(
+        create_success_response(ProblemModel.objects.all().values()))
+    return response
+</code></pre>
+<h4 id="get-specific-problems">Get Specific Problems</h4>
+<pre><code class="language-py">    response = Response(
+        create_success_response(ProblemModel.objects.filter(id=request.data['id']).all().values()))
+    return response
+</code></pre>
+<h4 id="add-problem-to-contest">Add Problem To contest</h4>
+<pre><code class="language-py">    def add_problem_to_contest(request: Request):
+        data = request.data
+        ProblemConetestModel(problem_id=ProblemModel.objects.get(id=data['problem_id']), contest_id=ContestModel.objects.get(id=data['contest_id'])).save()
+        response = Response(
+            create_success_response(&quot;hello&quot;))
+        return response
+</code></pre>
+<h4 id="get-testcases">Get Testcases</h4>
+<pre><code class="language-py">    def get_test_cases(request: Request):
+    data = request.data
+    respose = TestcaseModel.objects.filter(problem_id=data['id']).all().values()
+    return Response(create_success_response(respose))
+</code></pre>
+<h4 id="get-problem-by-contest">Get Problem by Contest</h4>
+<pre><code class="language-py">    def contest_problem(request: Request):
+    if str(request.user) != &quot;AnonymousUser&quot;:
+        print(request.data['id'])
+        if ContestSubmissionModel.objects.filter(user__email=str(request.user), contest_id=request.data['id']).exists() is False:
+            user = UserModel.objects.filter(email=str(request.user)).get()
+            user.contest_attend = user.contest_attend + 1
+            user.save()
+        for problem in ProblemConetestModel.objects.filter(contest_id=request.data['id']):
+            print(problem)
+            if ContestSubmissionModel.objects.filter(contest_id=request.data['id'], user__email=str(request.user), problem_id=problem.problem_id_id).exists() is False:
+                ContestSubmissionModel(contest_id=request.data['id'], user=UserModel.objects.get(email=request.user), problem_id=problem.problem_id_id).save()
+        if PenaltyModel.objects.filter(contest_id=request.data['id'], user__email=str(request.user)).exists() is False:
+            PenaltyModel(contest_id=request.data['id'], user=UserModel.objects.get(email=request.user)).save()
+    data = request.data
+    response = (ProblemConetestModel.objects.filter(contest_id=data['id']).order_by('problem_id__problem_number')
+                .values('problem_id_id', 'problem_id__problem_number', 'problem_id__problem_name', 'problem_id__problem_statement', 'problem_id__input', 'problem_id__output', 'problem_id__memory_limit', 'problem_id__time_limit', 'problem_id__solve_count'))
+    return Response(create_success_response(response))
+</code></pre>
+<h4 id="submission">Submission</h4>
+<pre><code class="language-py">    def submission(request: Request):
+    data = request.data
+    print(data)
+    time_passed = timezone.now() - ContestModel.objects.filter(id=request.data['contest_id']).first().start_at
+    time_passed = time_passed.total_seconds()
+    time_passed = f'{int(time_passed / 3600):2}:{int((time_passed / 60) % 60):2}'
+    submission = SubmissionModel(problem_id=request.data['problem_id'],
+                                 contest_id=request.data['contest_id'], code=request.data['code'],
+                                 verdict_id=2, language_id=1, verdict_text=&quot;In queue&quot;,
+                                 time=time_passed,
+                                 user_id=UserModel.objects.filter(email=request.user).get().id)
+    submission.save()
+    print(submission.id)
+    test_func.delay(submission.id)
+    return Response(create_success_response(SubmissionModel.objects.filter(id=submission.id).values()))
+</code></pre>
+<h4 id="my-submission">My Submission</h4>
+<pre><code class="language-py">    def mysubmission(request: Request):
+    data = request.data
+    print(request.user)
+    response = SubmissionModel.objects.filter(contest_id=data['contest_id'], user_id=UserModel.objects.get(email=request.user).id).all().values('problem__problem_name', 'problem_id', 'verdict_text', 'problem__problem_number', 'time')
+    return Response(create_success_response(response))
+</code></pre>
+<h4 id="submission_1">Submission</h4>
+<pre><code class="language-py">    def standing(request: Request):
+    data = request.data
+    ranking = PenaltyModel.objects.filter(contest_id=data['contest_id']).order_by('-solve', 'penalty').values('user_id', 'user__fullname', 'solve', 'penalty')
+    for item in ranking:
+        item['problem_status'] = ContestSubmissionModel.objects.filter(contest_id=data['contest_id'], user_id=item['user_id']).order_by('problem__problem_number').values()
+    return Response(create_success_response(ranking))
+</code></pre>
+<h3 id="user-api">USER API</h3>
+<h4 id="create-user">Create User</h4>
+<pre><code class="language-py">    def create_user(request: Request):
+    data = request.data;
+    email = data.get('email')
+    user_info = email.split('@')
+    batch = &quot;&quot;
+    for i in range(len(user_info[0])):
+        if '0' &lt;= user_info[0][i] &lt;= '9':
+            batch = user_info[0][i:i+3]
+            break
+    trimester = &quot;Spring&quot;
+    if batch[2] == '2':
+        trimester = &quot;Summer&quot;
+    if batch[2] == '3':
+        trimester = &quot;Fall&quot;
+
+    user = UserModel(fullname=data.get('fullname'), email=data.get('email'), username=str(random.random()),
+                     gender=data.get('gender'), password=make_password(data.get
+                                                                       ('password')), country=data.get('country'), batch=trimester, year=f'20{batch[0:2]}')
+    user.save()
+    refresh = RefreshToken.for_user(UserModel.objects.get(email=data.get('email')))
+    response = Response(
+        create_success_response({'access': str(refresh.access_token), 'refresh': str(refresh)}))
+    response.set_cookie(
+        key=settings.SIMPLE_JWT['AUTH_COOKIE'],
+        value= str(refresh.access_token),
+        expires=settings.SIMPLE_JWT['ACCESS_TOKEN_LIFETIME'],
+        secure=settings.SIMPLE_JWT['AUTH_COOKIE_SECURE'],
+        httponly=settings.SIMPLE_JWT['AUTH_COOKIE_HTTP_ONLY'],
+        samesite=None
+    )
+    csrf.get_token(request)
+    return response;
+</code></pre>
+<h4 id="sign-in_2">Sign In</h4>
+<pre><code class="language-py">    def signin(request: Request):
+    user = UserModel.objects.get(email=request.data.get('email'))
+    if check_password(request.data.get('password'), user.password) is False:
+        return Response(create_error_response(200, {&quot;hello&quot;: &quot;gasasd&quot;}))
+    refresh = RefreshToken.for_user(UserModel.objects.get(email=request.data.get('email')))
+    response = Response(
+        create_success_response({'access': str(refresh.access_token), 'refresh': str(refresh)}))
+    response.set_cookie(
+        key=settings.SIMPLE_JWT['AUTH_COOKIE'],
+        value= str(refresh.access_token),
+        expires=settings.SIMPLE_JWT['ACCESS_TOKEN_LIFETIME'],
+        secure=settings.SIMPLE_JWT['AUTH_COOKIE_SECURE'],
+        httponly=settings.SIMPLE_JWT['AUTH_COOKIE_HTTP_ONLY'],
+        samesite=None
+    )
+    csrf.get_token(request)
+    return response
+</code></pre>
+<h4 id="me">ME</h4>
+<pre><code class="language-py">    def me(request: Request):
+    if request.user is None:
+        return Response(create_error_response())
+    return Response(create_success_response({&quot;me&quot;: str(request.user)}))
+</code></pre>
+<h4 id="get-rank">Get Rank</h4>
+<pre><code class="language-py">    def get_rank(request: Request):
+        q = Q()
+        print(request.data)
+        if request.data['gender']:
+            q = q &amp; Q(gender=request.data['gender'])
+        if request.data['year']:
+            q = q &amp; Q(year=request.data['year'])
+        if request.data['batch']:
+            q = q &amp; Q(batch=request.data['batch'])
+
+        return Response(create_success_response(UserModel.objects.filter(q).order_by('-problem_solve', 'contest_attend').values('fullname', 'problem_solve', 'contest_attend')))
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "navigation.expand", "content.code.select"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>

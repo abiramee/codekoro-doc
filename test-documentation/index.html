@@ -1,0 +1,844 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../code-documentation/">
+      
+      
+        <link rel="next" href="../ajax-documentation/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Test Documentation - CodeKoro</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CodeKoro" class="md-header__button md-logo" aria-label="CodeKoro" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CodeKoro
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Test Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  User Documentation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../code-documentation/" class="md-tabs__link">
+        
+  
+    
+  
+  Code Documentation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Test Documentation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ajax-documentation/" class="md-tabs__link">
+        
+  
+    
+  
+  Ajax Documentation
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CodeKoro" class="md-nav__button md-logo" aria-label="CodeKoro" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    CodeKoro
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Test Documentation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Test Documentation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sara-ferdous-khan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sara Ferdous Khan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sara Ferdous Khan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-create-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Create User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-with-no-auth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test with no Auth
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-with-valid-sign-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test with valid Sign Up
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-with-invalid-sign-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test with invalid Sign in
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-with-incorrect-passoword-sign-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test with incorrect passoword Sign in
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Result
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abir-hosain-amee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abir Hosain Amee
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Abir Hosain Amee">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-create-contest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Create Contest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-process-analytics-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Process Analytics View
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-standings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Standings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-get-all-contests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Get All Contests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-result_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Result
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iftekhar-hossain" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iftekhar Hossain
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iftekhar Hossain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-create-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Create Problem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-get-specific-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Get Specific Problem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-get-all-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Get All Problem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-get-testcases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Get TestCases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-get-rank" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Get Rank
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-result_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Result
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ajax-documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ajax Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Test Documentation</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>Unit testing is a fundamental aspect of CodeKoro's testing strategy. Each component of the system undergoes thorough unit testing to ensure that individual functions and modules work as intended. This includes testing the parser, compiler, code executor, and any other core components responsible for code evaluation.</p>
+<h3 id="sara-ferdous-khan">Sara Ferdous Khan</h3>
+<h4 id="test-create-user">Test Create User</h4>
+<pre><code class="language-py">     email = &quot;asdasd192032@uiu.bscse.ac.bd&quot;
+        fullname = &quot;TEST&quot;
+        gender = &quot;M&quot;
+        password = &quot;asdasdasd&quot;
+
+        user = UserModel(email=email, fullname=fullname, gender=gender, password=password)
+        user.save()
+
+        self.assertEquals(user.email, email)
+        self.assertEquals(user.fullname, fullname)
+        self.assertEquals(user.gender, gender)
+</code></pre>
+<h4 id="test-with-no-auth">Test with no Auth</h4>
+<pre><code class="language-py">        client = APIClient(enforce_csrf_checks=True)
+        response = client.get('http://127.0.0.1:8000/me/', format='json')
+        self.assertFalse(response.data['success'])
+</code></pre>
+<h4 id="test-with-valid-sign-up">Test with valid Sign Up</h4>
+<pre><code class="language-py">        def test_valid_sign_up(self):
+        client = APIClient()
+        response = client.post('http://127.0.0.1:8000/auth/signup/',
+                               {'email': &quot;skhan193030@bscse.uiu.ac.bd&quot;,
+                                'fullname': &quot;TEST&quot;,
+                                'gender': &quot;M&quot;,
+                                'password': &quot;asdasdasd&quot;},
+                               format='json')
+        self.assertTrue(response.data['success'])
+</code></pre>
+<h4 id="test-with-invalid-sign-in">Test with invalid Sign in</h4>
+<pre><code class="language-py">        client = APIClient()
+        response = client.post('http://127.0.0.1:8000/auth/signin/',
+                               {'email': &quot;0&quot;,
+                                'password': &quot;0&quot;},
+                               format='json')
+        self.assertFalse(response.data['success'])
+</code></pre>
+<h4 id="test-with-incorrect-passoword-sign-in">Test with incorrect passoword Sign in</h4>
+<pre><code class="language-py">        client = APIClient()
+        response = client.post('http://127.0.0.1:8000/auth/signin/',
+                               {'email': &quot;skhan193030@bscse.uiu.ac.bd&quot;,
+                                'password': &quot;0&quot;},
+                               format='json')
+        self.assertFalse(response.data['success'])
+</code></pre>
+<h4 id="test-result">Test Result</h4>
+<p><img alt="asset" src="../assets/sara-test.png" /></p>
+<h3 id="abir-hosain-amee">Abir Hosain Amee</h3>
+<h4 id="test-create-contest">Test Create Contest</h4>
+<pre><code class="language-py">        def test_create_contest(self):
+            client = APIClient(enforce_csrf_checks=True)
+            response = client.post('http://127.0.0.1:8000/contest/', {
+                &quot;contest_name&quot;: &quot;ICPC 2070&quot;,
+                &quot;duration&quot;: 5,
+                &quot;start_at&quot;: &quot;2023-12-09 15:00:00&quot;,
+                &quot;end_at&quot;: &quot;2023-12-09 17:00:00&quot;,
+                &quot;schedule_at&quot;: &quot;09 Dec, 2023&quot;
+            }, format='json')
+            self.assertTrue(response.data['success'])
+</code></pre>
+<h4 id="test-time">Test Time</h4>
+<pre><code class="language-py">        def test_time(self):
+            client = APIClient()
+            response = client.post('http://127.0.0.1:8000/contest/time/',
+                                {'contest_id': 14},
+                                format='json')
+            print(response)
+            self.assertTrue(response)
+</code></pre>
+<h4 id="test-process-analytics-view">Test Process Analytics View</h4>
+<pre><code class="language-py">        def test_time(self):
+            client = APIClient()
+            response = client.post('http://127.0.0.1:8000/contest/time/',
+                                {'contest_id': 14},
+                                format='json')
+            print(response)
+            self.assertTrue(response)
+</code></pre>
+<h4 id="test-standings">Test Standings</h4>
+<pre><code class="language-py">        def test_standings(self):
+            client = APIClient()
+            response = client.post('http://127.0.0.1:8000/contest/standings/',
+                                {'contest_id': 14},
+                                format='json')
+            print(response)
+            self.assertTrue(response)
+</code></pre>
+<h4 id="test-get-all-contests">Test Get All Contests</h4>
+<pre><code class="language-py">        def test_all_contests(self):
+        client = APIClient()
+        response = client.get('http://127.0.0.1:8000/contest/all/',
+                              format='json')
+        self.assertTrue(response)
+</code></pre>
+<h4 id="test-result_1">Test Result</h4>
+<p><img alt="asset" src="../assets/test-abir.png" /></p>
+<h3 id="iftekhar-hossain">Iftekhar Hossain</h3>
+<h4 id="test-create-problem">Test Create Problem</h4>
+<pre><code class="language-py">        def test_create_problem(self):
+            client = APIClient(enforce_csrf_checks=True)
+            response = client.post('http://127.0.0.1:8000/create-problem/', {
+                &quot;problem_name&quot;: &quot;Ones and Twos&quot;,
+                &quot;problem_statement&quot;: &quot;asdasdasd&quot;,
+                &quot;input&quot;: &quot;asdasd&quot;,
+                &quot;output&quot;: &quot;asdasd&quot;,
+                &quot;problem_number&quot;: &quot;A&quot;,
+                &quot;time_limit&quot;: 1,
+                &quot;memory_limit&quot;: &quot;256MB&quot;,
+                &quot;testcases&quot;: [
+                    {
+                        &quot;input&quot;: &quot;123123&quot;,
+                        &quot;output&quot;: &quot;YES YES NO YES YES NO&quot;
+                    }
+                ]
+            }, format='json')
+            self.assertTrue(response.data['success'])
+</code></pre>
+<h4 id="test-get-specific-problem">Test Get Specific Problem</h4>
+<pre><code class="language-py">        def test_get_specific_problem(self):
+            client = APIClient()
+            response = client.post('http://127.0.0.1:8000/problem-contest/',
+                                {'id': 14},
+                                format='json')
+            print(response)
+            self.assertTrue(response)
+</code></pre>
+<h4 id="test-get-all-problem">Test Get All Problem</h4>
+<pre><code class="language-py">        def test_get_specific_problem(self):
+            client = APIClient()
+            response = client.post('http://127.0.0.1:8000/problem-contest/',
+                                {'id': 14},
+                                format='json')
+            print(response)
+            self.assertTrue(response)
+</code></pre>
+<h4 id="test-get-testcases">Test Get TestCases</h4>
+<pre><code class="language-py">        def test_get_test_cases(self):
+            client = APIClient()
+            response = client.post('http://127.0.0.1:8000/problem/testcases/',
+                                {'id': 41},
+                                format='json')
+            print(response)
+            self.assertTrue(response)
+</code></pre>
+<h4 id="test-get-rank">Test Get Rank</h4>
+<pre><code class="language-py">        def test_get_rank(self):
+            client = APIClient()
+            response = client.post('http://127.0.0.1:8000/rank/', {'gender': '', 'year': '', 'batch': ''},
+                                format='json')
+            self.assertTrue(response)
+</code></pre>
+<h4 id="test-result_2">Test Result</h4>
+<p><img alt="asset" src="../assets/test-ifti.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "navigation.expand", "content.code.select"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
