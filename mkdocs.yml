@@ -1,0 +1,32 @@
+
+site_name: CodeKoro
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - navigation.expand
+    - content.code.select
+  language: en
+
+
+nav: 
+   - User Documentation: "index.md"
+   - Code Documentation: "code-documentation.md"
+   - Test Documentation: "test-documentation.md"
+   - Ajax Documentation: "ajax-documentation.md"
+
+
+
+dev_addr: 127.0.0.1:8006 
